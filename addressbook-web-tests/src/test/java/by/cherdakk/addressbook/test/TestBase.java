@@ -4,12 +4,13 @@ import by.cherdakk.addressbook.applicationmanager.ApplicationManager;
 import by.cherdakk.addressbook.model.ContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.BrowserType;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 public class TestBase {
 
-  protected final ApplicationManager app = new ApplicationManager();
+  protected final ApplicationManager app = new ApplicationManager(BrowserType.FIREFOX);
   private WebDriver wd;
 
   @BeforeMethod(alwaysRun = true)

@@ -51,8 +51,18 @@ public class ContactHelper extends HelperBase{
     wd.findElement(By.name("email")).sendKeys("X");
   }
 
-  public void submiContactModification() {
+  public void submitContactModification() {
     click(By.name("update"));
   }
 
+  public void createContact(ContactData contact) {
+    initContactCreation();
+    fillContactForm(contact);
+    submitContactCreation();
+    returnToHomePage();
+  }
+
+  public boolean isThereAContact() {
+    return isElementPresent(By.xpath("//img[@alt='Edit']"));
+  }
 }

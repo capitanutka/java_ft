@@ -1,4 +1,4 @@
-package by.cherdakk;
+package by.cherdakk.addressbook;
 
 public class MyFirstProgramm {
 

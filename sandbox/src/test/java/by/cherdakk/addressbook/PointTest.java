@@ -1,9 +1,9 @@
-package by.cherdakk;
+package by.cherdakk.addressbook;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static by.cherdakk.MyFirstProgramm.distance;
+import static by.cherdakk.addressbook.MyFirstProgramm.distance;
 
 public class PointTest {
 

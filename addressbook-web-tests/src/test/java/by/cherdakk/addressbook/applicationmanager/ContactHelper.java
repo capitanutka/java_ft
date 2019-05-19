@@ -4,6 +4,8 @@ import by.cherdakk.addressbook.model.ContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.concurrent.TimeUnit;
+
 public class ContactHelper extends HelperBase{
 
   public ContactHelper(WebDriver wd){
@@ -30,17 +32,18 @@ public class ContactHelper extends HelperBase{
     click(By.linkText("add new"));
   }
 
-  public void selectContact() {
-    click(By.xpath("//input[@id]"));
+  public void selectContact(int index) {
+    wd.findElements(By.name("selected[]")).get(index).click();
   }
 
   public void deleteSelectedContacts() {
     click(By.xpath("//input[@value='Delete']"));
     wd.switchTo().alert().accept();
+    wd.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
   }
 
-  public void initContactModification() {
-    click(By.xpath("//img[@alt='Edit']"));
+  public void initContactModification(int index){
+    wd.findElements(By.xpath("//img[@alt='Edit']")).get(index).click();
   }
 
   public void modifyContactForm() {
@@ -64,5 +67,9 @@ public class ContactHelper extends HelperBase{
 
   public boolean isThereAContact() {
     return isElementPresent(By.xpath("//img[@alt='Edit']"));
+  }
+
+  public int getContactCount() {
+    return wd.findElements(By.xpath("//img[@alt='Edit']")).size();
   }
 }

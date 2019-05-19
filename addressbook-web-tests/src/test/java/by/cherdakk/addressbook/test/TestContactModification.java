@@ -1,6 +1,7 @@
 package by.cherdakk.addressbook.test;
 
 import by.cherdakk.addressbook.model.ContactData;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestContactModification extends TestBase {
@@ -11,9 +12,13 @@ public class TestContactModification extends TestBase {
     if (! app.getContactHelper().isThereAContact()) {
       app.getContactHelper().createContact(new ContactData("Name", "Lastname", "Address", "+375442020327", "test@test.by"));
     }
-    app.getContactHelper().initContactModification();
+    int before = app.getContactHelper().getContactCount();
+    app.getContactHelper().initContactModification(before - 1);
     app.getContactHelper().modifyContactForm();
     app.getContactHelper().submitContactModification();
     app.getContactHelper().returnToHomePage();
+    int after = app.getContactHelper().getContactCount();
+    Assert.assertEquals(before, after);
   }
+
 }

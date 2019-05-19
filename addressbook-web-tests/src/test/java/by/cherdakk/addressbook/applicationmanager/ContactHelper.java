@@ -3,7 +3,10 @@ package by.cherdakk.addressbook.applicationmanager;
 import by.cherdakk.addressbook.model.ContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class ContactHelper extends HelperBase{
@@ -39,7 +42,6 @@ public class ContactHelper extends HelperBase{
   public void deleteSelectedContacts() {
     click(By.xpath("//input[@value='Delete']"));
     wd.switchTo().alert().accept();
-    wd.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
   }
 
   public void initContactModification(int index){
@@ -71,5 +73,20 @@ public class ContactHelper extends HelperBase{
 
   public int getContactCount() {
     return wd.findElements(By.xpath("//img[@alt='Edit']")).size();
+  }
+
+  public List<ContactData> getContactList() {
+    List<ContactData> contacts = new ArrayList<>();
+    List<WebElement> elements = wd.findElements(By.xpath("//tr[@class]"));
+    for (WebElement element : elements) {
+
+      String lastname = element.findElement(By.xpath("./td[2]")).getText();
+      String firstname = element.findElement(By.xpath("./td[3]")).getText();
+
+      Integer id = Integer.parseInt(element.findElement(By.xpath("./td[1]/input")).getAttribute("value"));
+
+      contacts.add(new ContactData(id, firstname, lastname, null, null, null));
+    }
+    return contacts;
   }
 }

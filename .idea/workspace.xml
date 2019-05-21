@@ -49,10 +49,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestContactCreation.java">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/ContactCreationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="28" selection-start-line="28" selection-end-line="32" selection-end-column="39" />
+            <state relative-caret-position="255">
+              <caret line="15" column="173" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="173" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,10 +61,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestContactDeletion.java">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/ContactDeletionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="227">
+              <caret line="15" column="173" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="173" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/ContactModificationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="499">
+              <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,10 +85,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestContactModification.java">
+        <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/ContactHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+            <state relative-caret-position="272">
+              <caret line="77" column="47" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,23 +129,29 @@
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/SessionHelper.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/HelperBase.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/NavigationHelper.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestGroupDeletion.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/GroupHelper.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestGroupCreation.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/model/GroupData.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestGroupModification.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestContactCreation.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/model/ContactData.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestContactDeletion.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/ApplicationManager.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/ContactHelper.java" />
-        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestBase.java" />
         <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestContactModification.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestBase.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/NavigationHelper.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/model/GroupData.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/GroupModificationTest.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/GroupDeletionTest.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/GroupCreationTest.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/GroupHelper.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/ContactCreationTest.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/ContactDeletionTest.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/model/ContactData.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/ContactModificationTest.java" />
+        <option value="$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/ContactHelper.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="15" />
     <option name="y" value="30" />
     <option name="width" value="1890" />
@@ -145,7 +163,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -205,7 +223,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,8 +261,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestContactDeletion">
-    <configuration name="TestContactCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.by.cherdakk.addressbook.test">
+    <configuration name="ContactCreationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -253,7 +271,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.cherdakk.addressbook.test" />
-      <option name="MAIN_CLASS_NAME" value="by.cherdakk.addressbook.test.TestContactCreation" />
+      <option name="MAIN_CLASS_NAME" value="by.cherdakk.addressbook.test.ContactCreationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -261,7 +279,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestContactDeletion" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactDeletionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -270,7 +288,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.cherdakk.addressbook.test" />
-      <option name="MAIN_CLASS_NAME" value="by.cherdakk.addressbook.test.TestContactDeletion" />
+      <option name="MAIN_CLASS_NAME" value="by.cherdakk.addressbook.test.ContactDeletionTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -278,7 +296,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestContactModification" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -287,7 +305,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.cherdakk.addressbook.test" />
-      <option name="MAIN_CLASS_NAME" value="by.cherdakk.addressbook.test.TestContactModification" />
+      <option name="MAIN_CLASS_NAME" value="by.cherdakk.addressbook.test.ContactModificationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -295,24 +313,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGroupCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="by.cherdakk.addressbook.model" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="by.cherdakk.addressbook.test.*" />
+          <option name="PATTERN" value="by.cherdakk.addressbook.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="by.cherdakk.addressbook.test" />
-      <option name="MAIN_CLASS_NAME" value="by.cherdakk.addressbook.test.TestGroupCreation" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="by.cherdakk.addressbook.model" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGroupModification" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="by.cherdakk.addressbook.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -321,8 +338,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="by.cherdakk.addressbook.test" />
-      <option name="MAIN_CLASS_NAME" value="by.cherdakk.addressbook.test.TestGroupModification" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <properties />
       <listeners />
       <method v="2">
@@ -331,11 +347,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestContactDeletion" />
-        <item itemvalue="TestNG.TestContactModification" />
-        <item itemvalue="TestNG.TestContactCreation" />
-        <item itemvalue="TestNG.TestGroupModification" />
-        <item itemvalue="TestNG.TestGroupCreation" />
+        <item itemvalue="TestNG.by.cherdakk.addressbook.test" />
+        <item itemvalue="TestNG.by.cherdakk.addressbook.model" />
+        <item itemvalue="TestNG.ContactDeletionTest" />
+        <item itemvalue="TestNG.ContactModificationTest" />
+        <item itemvalue="TestNG.ContactCreationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -353,12 +369,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestContactDeletion - 2019.05.19 at 15h 56m 01s.xml">
-      <configuration name="TestContactDeletion" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="TestContactDeletion - 2019.05.19 at 15h 56m 16s.xml">
-      <configuration name="TestContactDeletion" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="TestContactDeletion - 2019.05.19 at 16h 01m 05s.xml">
       <configuration name="TestContactDeletion" configurationId="TestNG" />
     </history-entry>
@@ -383,11 +393,18 @@
     <history-entry file="TestContactDeletion - 2019.05.19 at 16h 08m 00s.xml">
       <configuration name="TestContactDeletion" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="by_cherdakk_addressbook_test - 2019.05.21 at 16h 22m 36s.xml">
+      <configuration name="by.cherdakk.addressbook.test" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="by_cherdakk_addressbook_test - 2019.05.21 at 16h 55m 27s.xml">
+      <configuration name="by.cherdakk.addressbook.test" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20728745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20628998" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -396,7 +413,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3321492" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33173537" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -461,6 +478,18 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/ContactModificationTest.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/sandbox/build.gradle">
@@ -528,58 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestGroupCreation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestGroupDeletion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/GroupHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="76" column="19" lean-forward="true" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/model/GroupData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="e#1029#1030#0" expanded="true" />
-            <element signature="e#1064#1065#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/model/ContactData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="68" column="35" selection-start-line="68" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
-          <folding>
-            <element signature="e#1810#1811#0" expanded="true" />
-            <element signature="e#1860#1861#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/internal/Invoker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -597,64 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/NavigationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/ContactHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="44" column="3" lean-forward="true" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#1019#1020#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestContactDeletion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestContactCreation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="28" selection-start-line="28" selection-end-line="32" selection-end-column="39" />
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -663,8 +586,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/HelperBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#373#374#0" expanded="true" />
@@ -673,20 +596,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestGroupModification.java">
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/ApplicationManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="20" column="110" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="110" />
+        <state relative-caret-position="516">
+          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1415#1416#0" expanded="true" />
+            <element signature="e#1443#1444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/NavigationHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#373#374#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/model/GroupData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#1029#1030#0" expanded="true" />
+            <element signature="e#1064#1065#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/GroupCreationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/GroupDeletionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/GroupHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="93" column="24" lean-forward="true" selection-start-line="93" selection-start-column="24" selection-end-line="93" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/TestContactModification.java">
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/GroupModificationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="35" column="39" lean-forward="true" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+        <state relative-caret-position="391">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="138" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/ContactCreationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="173" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="173" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/model/ContactData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/ContactModificationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="499">
+          <caret line="34" column="39" lean-forward="true" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/test/ContactDeletionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="15" column="173" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="173" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addressbook-web-tests/src/test/java/by/cherdakk/addressbook/applicationmanager/ContactHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="77" column="47" selection-start-line="77" selection-start-column="47" selection-end-line="77" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

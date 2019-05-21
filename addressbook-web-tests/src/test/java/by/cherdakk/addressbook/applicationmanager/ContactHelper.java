@@ -23,6 +23,13 @@ public class ContactHelper extends HelperBase{
     click(By.xpath("(//input[@name='submit'])[2]"));
   }
 
+  public void modify(int index, ContactData contact) {
+    initContactModification(index);
+    fillContactForm(contact);
+    submitContactModification();
+    returnToHomePage();
+  }
+
   public void fillContactForm(ContactData contactData) {
     type(By.name("firstname"),contactData.getFirstname());
     type(By.name("lastname"),contactData.getLastname());
@@ -60,7 +67,7 @@ public class ContactHelper extends HelperBase{
     click(By.name("update"));
   }
 
-  public void createContact(ContactData contact) {
+  public void create(ContactData contact) {
     initContactCreation();
     fillContactForm(contact);
     submitContactCreation();
@@ -75,17 +82,14 @@ public class ContactHelper extends HelperBase{
     return wd.findElements(By.xpath("//img[@alt='Edit']")).size();
   }
 
-  public List<ContactData> getContactList() {
+  public List<ContactData> list() {
     List<ContactData> contacts = new ArrayList<>();
     List<WebElement> elements = wd.findElements(By.xpath("//tr[@class]"));
     for (WebElement element : elements) {
-
       String lastname = element.findElement(By.xpath("./td[2]")).getText();
       String firstname = element.findElement(By.xpath("./td[3]")).getText();
-
       Integer id = Integer.parseInt(element.findElement(By.xpath("./td[1]/input")).getAttribute("value"));
-
-      contacts.add(new ContactData(id, firstname, lastname, null, null, null));
+      contacts.add(new ContactData().withId(id).withFirstname(firstname).withLastname(lastname));
     }
     return contacts;
   }

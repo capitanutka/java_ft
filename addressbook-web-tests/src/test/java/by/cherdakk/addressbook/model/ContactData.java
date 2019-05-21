@@ -3,30 +3,12 @@ package by.cherdakk.addressbook.model;
 import java.util.Objects;
 
 public class ContactData {
-  private final String firstname;
-  private final String lastname;
-  private final String address;
-  private final String mobilephone;
-  private final String email;
-  private Integer id;
-
-  public ContactData(Integer id, String firstname, String lastname, String address, String mobilephone, String email) {
-    this.id = id;
-    this.firstname = firstname;
-    this.lastname = lastname;
-    this.address = address;
-    this.mobilephone = mobilephone;
-    this.email = email;
-  }
-
-  public ContactData(String firstname, String lastname, String address, String mobilephone, String email) {
-    this.id = Integer.MAX_VALUE;
-    this.firstname = firstname;
-    this.lastname = lastname;
-    this.address = address;
-    this.mobilephone = mobilephone;
-    this.email = email;
-  }
+  private String firstname;
+  private String lastname;
+  private String address;
+  private String mobilephone;
+  private String email;
+  private int id = Integer.MAX_VALUE;
 
   public String getFirstname() {
     return firstname;
@@ -52,8 +34,34 @@ public class ContactData {
     return id;
   }
 
-  public void setId(Integer id) {
+  public ContactData withId(Integer id) {
     this.id = id;
+    return this;
+  }
+
+  public ContactData withFirstname(String firstname) {
+    this.firstname = firstname;
+    return this;
+  }
+
+  public ContactData withLastname(String lastname) {
+    this.lastname = lastname;
+    return this;
+  }
+
+  public ContactData withAddress(String address) {
+    this.address = address;
+    return this;
+  }
+
+  public ContactData withMobilephone(String mobilephone) {
+    this.mobilephone = mobilephone;
+    return this;
+  }
+
+  public ContactData withEmail(String email) {
+    this.email = email;
+    return this;
   }
 
   @Override

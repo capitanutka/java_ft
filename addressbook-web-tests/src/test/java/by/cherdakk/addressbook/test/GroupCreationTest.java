@@ -5,23 +5,21 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Set;
 
 public class GroupCreationTest extends TestBase {
 
   @Test
   public void testGroupCreation() throws Exception {
     app.goTo().groupPage();
-    List<GroupData> before = app.group().list();
+    Set<GroupData> before = app.group().all();
     GroupData group = new GroupData().withName("test1").withHeader("test2").withFooter("test3");
     app.group().create(group);
-    List<GroupData> after = app.group().list();
+    Set<GroupData> after = app.group().all();
     Assert.assertEquals(before.size() + 1, after.size());
 
+    group.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt());
     before.add(group);
-    Comparator<? super GroupData> byID = ((o1, o2) -> Integer.compare(o1.getId(), o2.getId()));
-    before.sort(byID);
-    after.sort(byID);
     Assert.assertEquals(before, after);
   }
-
 }

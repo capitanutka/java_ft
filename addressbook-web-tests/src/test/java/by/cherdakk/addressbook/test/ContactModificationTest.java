@@ -1,6 +1,7 @@
 package by.cherdakk.addressbook.test;
 
 import by.cherdakk.addressbook.model.ContactData;
+import by.cherdakk.addressbook.model.Contacts;
 import by.cherdakk.addressbook.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -9,6 +10,9 @@ import org.testng.annotations.Test;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Set;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactModificationTest extends TestBase {
 
@@ -22,16 +26,13 @@ public class ContactModificationTest extends TestBase {
 
   @Test
   public void TestContactModification() throws Exception {
-    Set<ContactData> before = app.contact().all();
+    Contacts before = app.contact().all();
     ContactData modifiedContact = before.iterator().next();
     ContactData contact = new ContactData().withId(modifiedContact.getId()).withFirstname("modified").withLastname("modified").withAddress("modified").withMobilephone("modified").withEmail("modified");
     app.contact().modify(contact);
-    Set<ContactData> after = app.contact().all();
+    Contacts after = app.contact().all();
     Assert.assertEquals(before.size(), after.size());
-
-    before.remove(modifiedContact);
-    before.add(contact);
-    Assert.assertEquals(before, after);
+    assertThat(after, equalTo(before.without(modifiedContact).withAdded(contact)));
   }
 
 }

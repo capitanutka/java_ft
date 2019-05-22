@@ -16,11 +16,10 @@ public class ContactCreationTest extends TestBase{
     Contacts before = app.contact().all();
     ContactData contact = new ContactData().withFirstname("Name").withLastname("Lastname").withAddress("Address").withMobilephone("+375442020327").withEmail("test@test.by");
     app.contact().create(contact);
+    assertThat(app.contact().count(),equalTo( before.size() + 1));
     Contacts after = app.contact().all();
-    Assert.assertEquals(before.size() + 1, after.size());
-
-    contact.withId(after.stream().mapToInt((o) -> o.getId()).max().getAsInt());
-    assertThat(after, equalTo(before.withAdded(contact)));
+    assertThat(after, equalTo(before.withAdded(
+            contact.withId(after.stream().mapToInt((o) -> o.getId()).max().getAsInt()))));
   }
 
 }

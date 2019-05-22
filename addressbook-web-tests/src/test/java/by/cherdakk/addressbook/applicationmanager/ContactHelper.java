@@ -104,4 +104,8 @@ public class ContactHelper extends HelperBase{
     return new Contacts(contactsCache);
   }
 
+  public int count() {
+    return wd.findElements(By.xpath("//tr[@class]")).size();
+  }
+
 }

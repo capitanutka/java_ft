@@ -112,6 +112,7 @@ public class GroupHelper extends HelperBase {
     return new Groups(groupCache);
   }
 
-
-
+  public int count() {
+    return wd.findElements(By.name("selected[]")).size();
+  }
 }

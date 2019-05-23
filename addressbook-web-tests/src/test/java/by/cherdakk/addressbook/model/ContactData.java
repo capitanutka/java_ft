@@ -6,8 +6,14 @@ public class ContactData {
   private String firstname;
   private String lastname;
   private String address;
-  private String mobilephone;
+  private String phones;
+  private String homePhone;
+  private String mobilePhone;
+  private String workPhone;
+  private String emails;
   private String email;
+  private String email2;
+  private String email3;
   private int id = Integer.MAX_VALUE;
 
   public String getFirstname() {
@@ -18,16 +24,40 @@ public class ContactData {
     return lastname;
   }
 
-  public String getAddress() {
-    return address;
+  public String getPhones() {
+    return phones;
   }
 
-  public String getMobilephone() {
-    return mobilephone;
+  public String getHomePhone() {
+    return homePhone;
+  }
+
+  public String getMobilePhone() {
+    return mobilePhone;
+  }
+
+  public String getWorkPhone() {
+    return workPhone;
+  }
+
+  public String getEmails() {
+    return emails;
   }
 
   public String getEmail() {
     return email;
+  }
+
+  public String getEmail2() {
+    return email2;
+  }
+
+  public String getEmail3() {
+    return email3;
+  }
+
+  public String getAddress() {
+    return address;
   }
 
   public Integer getId() {
@@ -54,8 +84,18 @@ public class ContactData {
     return this;
   }
 
-  public ContactData withMobilephone(String mobilephone) {
-    this.mobilephone = mobilephone;
+  public ContactData withMobilePhone(String mobilePhone) {
+    this.mobilePhone = mobilePhone;
+    return this;
+  }
+
+  public ContactData withHomePhone(String homePhone) {
+    this.homePhone = homePhone;
+    return this;
+  }
+
+  public ContactData withWorkPhone(String workPhone) {
+    this.workPhone = workPhone;
     return this;
   }
 
@@ -64,6 +104,15 @@ public class ContactData {
     return "ContactData{" +
             "firstname='" + firstname + '\'' +
             ", lastname='" + lastname + '\'' +
+            ", address='" + address + '\'' +
+            ", phones='" + phones + '\'' +
+            ", homePhone='" + homePhone + '\'' +
+            ", mobilePhone='" + mobilePhone + '\'' +
+            ", workPhone='" + workPhone + '\'' +
+            ", emails='" + emails + '\'' +
+            ", email='" + email + '\'' +
+            ", email2='" + email2 + '\'' +
+            ", email3='" + email3 + '\'' +
             ", id=" + id +
             '}';
   }
@@ -85,6 +134,26 @@ public class ContactData {
 
   public ContactData withEmail(String email) {
     this.email = email;
+    return this;
+  }
+
+  public ContactData withEmail2(String email2) {
+    this.email2 = email2;
+    return this;
+  }
+
+  public ContactData withEmail3(String email3) {
+    this.email3 = email3;
+    return this;
+  }
+
+  public ContactData withPhones(String allPhones) {
+    this.phones = allPhones;
+    return this;
+  }
+
+  public ContactData withEmails(String allEmails) {
+    this.emails = allEmails;
     return this;
   }
 
